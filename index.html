@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .highContrast {
+      color: #000;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Accessible Website</h1>
+  <p>This is a paragraph with proper contrast.</p>
+  <p>This is a paragraph with low contrast.</p>
+  <p>This is a paragraph with very low contrast.</p>
+
+  <div>
+    <label for="username" style="color: #000; background-color: #fff;">Username</label>
+    <input type="text" id="username" style="color: #000; background-color: #fff;">
+  </div>
+
+  <p>Click the button to change the contrast.</p>
+  <button onclick="changeContrast()">Change Contrast</button>
+
+  <script>
+    function changeContrast() {
+      document.body.classList.toggle('highContrast');
+    }
+  </script>
+</body>
+</html>
